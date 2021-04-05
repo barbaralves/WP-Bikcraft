@@ -7,7 +7,8 @@ get_header();
 
     <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
-    <section class="container fadeInDown" data-slide="quote" data-anime="1200">
+    <!-- <section class="container fadeInDown" data-slide="quote" data-anime="1200"> -->
+    <section class="container">
         <blockquote class="quote-cliente">
             <p>"Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo."</p>
             <cite>Barbara Moss</cite>
@@ -23,20 +24,12 @@ get_header();
     </section>
 
     <section class="portfolio">
-        <div class="container" data-slide="portfolio">
-            <ul class="portfolio-lista">
-                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-            </ul>
-            <ul class="portfolio-lista">
-                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-            </ul>
+        <!-- <div class="container" data-slide="portfolio"> -->
+        <div class="container">
+            <?php include(TEMPLATEPATH . "/inc/cliente-portfolio.php"); ?>
+        <!-- Fim portfoólio -->
         </div>
     </section>
-    <!-- Fim portfoólio -->
 
 <?php endwhile; else: endif; ?>
 

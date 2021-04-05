@@ -55,11 +55,7 @@ get_header();
     <section class="portfolio">
         <div class="container">
             <h2 class="subtitulo">Portfólio</h2>
-            <ul class="portfolio-lista">
-                <li class="grid-8"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                <li class="grid-8"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                <li class="grid-16"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-            </ul>
+            <?php include(TEMPLATEPATH . "/inc/cliente-portfolio.php"); ?>
             <div class="call">
                 <p><?php the_field('chamada_portfolio'); ?></p>
                 <a href="/sites/bikcraft/portfolio/" class="btn">Portfólio</a>
