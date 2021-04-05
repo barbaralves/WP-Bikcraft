@@ -15,6 +15,11 @@ Version: 1.0
 @import 'css/portfolio.css';
 @import 'css/contato.css';
 
+/* Estilos ADM WordPress */
+.customize-support .header {
+    margin-top: 32px;
+}
+
 /* Estilos Gerais */
 
 body {
