@@ -7,17 +7,17 @@ get_header();
 
     <section class="introducao">
         <div class="container">
-            <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
-            <blockquote data-anime="800" class="fadeInDown quote-externo">
+            <h1>Bicicletas Feitas a Mão</h1>
+            <blockquote class="quote-externo">
                 <p>"não tenha nada em sua casa que você considere útil ou acredita ser bonito"</p>
                 <cite>WILLIAM MORRIS</cite>
             </blockquote>
-            <a data-anime="1200" href="produtos.html" class="btn">Orçamento</a>
+            <a href="produtos.html" class="btn">Orçamento</a>
         </div>
     </section>
     <!-- Fim introdução -->
 
-    <section class="produtos container fadeInDown" data-anime="1600">
+    <section class="produtos container">
         <h2 class="subtitulo">Produtos</h2>
         <ul class="produtos-lista">
             <li class="grid-1-3">
