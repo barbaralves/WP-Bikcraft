@@ -7,12 +7,12 @@ get_header();
 
     <section class="introducao">
         <div class="container">
-            <h1>Bicicletas Feitas a Mão</h1>
+            <h1><?php the_field('titulo_introducao'); ?></h1>
             <blockquote class="quote-externo">
-                <p>"não tenha nada em sua casa que você considere útil ou acredita ser bonito"</p>
-                <cite>WILLIAM MORRIS</cite>
+                <p><?php the_field('quote_introducao'); ?></p>
+                <cite><?php the_field('citacao_introducao'); ?></cite>
             </blockquote>
-            <a href="produtos.html" class="btn">Orçamento</a>
+            <a href="/sites/bikcraft/produtos" class="btn">Orçamento</a>
         </div>
     </section>
     <!-- Fim introdução -->
@@ -22,7 +22,7 @@ get_header();
         <ul class="produtos-lista">
             <li class="grid-1-3">
                 <div class="produtos-icone">
-                    <img src="img/produtos/passeio.svg" alt="Bikcraft Passeio">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/produtos/passeio.svg" alt="Bikcraft Passeio">
                 </div>
                 <h3>Passeio</h3>
                 <p>Muito melhor do que passear pela orla a vidros fechados.</p>
@@ -30,7 +30,7 @@ get_header();
 
             <li class="grid-1-3">
                 <div class="produtos-icone">
-                    <img src="img/produtos/esporte.svg" alt="Bikcraft Passeio">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/produtos/esporte.svg" alt="Bikcraft Passeio">
                 </div>
                 <h3>Esporte</h3>
                 <p>Mais rápida do que Forrest Gump, ninguém vai pegar você.</p>
@@ -38,7 +38,7 @@ get_header();
         
             <li class="grid-1-3">
                 <div class="produtos-icone">
-                    <img src="img/produtos/retro.svg" alt="Bikcraft Passeio">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/produtos/retro.svg" alt="Bikcraft Passeio">
                 </div>
                 <h3>Retro</h3>
                 <p>O passado volta para lembrarmos o que devemos fazer no futuro.</p>
@@ -46,8 +46,8 @@ get_header();
         </ul>
 
         <div class="call">
-            <p>Clique aqui e veja os detalhes dos produtos</p>
-            <a href="produtos.html" class="btn btn-preto">Produtos</a>
+            <p><?php the_field('chamada_produtos'); ?></p>
+            <a href="/sites/bikcraft/produtos/" class="btn btn-preto">Produtos</a>
         </div>
     </section>
     <!-- Fim dos produtos -->
@@ -56,13 +56,13 @@ get_header();
         <div class="container">
             <h2 class="subtitulo">Portfólio</h2>
             <ul class="portfolio-lista">
-                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+                <li class="grid-8"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
+                <li class="grid-8"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+                <li class="grid-16"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
             </ul>
             <div class="call">
-                <p>Conheça mais o nosso portfólio</p>
-                <a href="portfolio.html" class="btn">Portfólio</a>
+                <p><?php the_field('chamada_portfolio'); ?></p>
+                <a href="/sites/bikcraft/portfolio/" class="btn">Portfólio</a>
             </div>
         </div>
     </section>
@@ -70,7 +70,7 @@ get_header();
 
     <section class="qualidade container">
         <h2 class="subtitulo">Qualidade</h2>
-        <img src="img/bikcraft-qualidade.svg" alt="Bikcraft">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/bikcraft-qualidade.svg" alt="Bikcraft">
         <ul class="qualidade-lista">
             <li class="grid-1-3">
                 <h3>Durabilidade</h3>
