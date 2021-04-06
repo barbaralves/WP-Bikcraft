@@ -7,8 +7,8 @@ get_header();
 
     <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
     
-    <section class="contato container fadeInDown" data-anime="1200"> 
-        <form id="form-orcamento" method="POST" action="./enviar.php" class="contato-form grid-8 formphp">
+    <section class="contato container fadeInDown"> 
+        <form id="form-orcamento" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="contato-form grid-8 formphp">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required>
             <label for="email">E-mail</label>
@@ -27,22 +27,18 @@ get_header();
         </form>
         <div class="contato-dados grid-8">
             <h3>Dados</h3>
-            <span>+55 21 93223 3232</span>
-            <span>contato@bikcraft.com</span>
-            <span>Rua Ali Perto - Botafogo</span>
-            <span>Rio de Janeiro - RJ - Brasil</span>
+            <span><?php the_field('telefone'); ?></span>
+            <span><?php the_field('email'); ?></span>
+            <span><?php the_field('endereco1'); ?></span>
+            <span><?php the_field('endereco2'); ?></span>
             <h3>Redes Sociais</h3>
-            <ul>
-                <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
-                <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=""></a></li>
-                <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt=""></a></li>
-            </ul>
+            <?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
         </div>
     </section>
     <!-- Fim contatos -->
 
     <section class="container contato-mapa">
-        <a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+        <a href="<?php the_field('link_mapa'); ?>" target="_blank" class="grid-16"><img src="<?php the_field('imagem_mapa'); ?>" alt="<?php the_field('texto_mapa'); ?>"></a>
     </section>
 
 <?php endwhile; else: endif; ?>
