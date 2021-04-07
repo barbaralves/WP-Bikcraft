@@ -283,6 +283,10 @@ img {
     margin-top: 20px;
 }
 
+.portfolio_lista div:last-of-type {
+    margin-top: 20px;
+}
+
 .portfolio .call p {
     color: #fff;
 }
