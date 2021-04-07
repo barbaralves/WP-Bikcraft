@@ -23,29 +23,7 @@ get_header();
         </div>
     </section>
     
-    <section class="orcamento">
-        <div class="container">
-            <h2 class="subtitulo">Orçamento</h2>
-            <form id="form-orcamento" method="POST" action="./enviar.php" class="form grid-8 formphp">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone">
-
-                <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-                <input type="text" class="nao-aparece" name="leaveblank">
-                <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
-                <input type="text" class="nao-aparece" name="dontchange" value="http://">
-
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
-            </form>
-            <?php include(TEMPLATEPATH . "/inc/produtos-orcamento.php"); ?>
-        </div>
-    </section>
+    <?php include(TEMPLATEPATH . "/inc/produtos-orcamento.php"); ?>
     
 <?php endwhile; else: endif; ?>
 
