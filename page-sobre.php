@@ -7,7 +7,7 @@ get_header();
 
     <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
-    <section class="missao-sobre container fadeInDown">
+    <section class="missao-sobre container fadeInDown" data-anime="1200">
         <div class="grid-10">
             <h2 class="subtitulo-interno">História, Missão e Visão</h2>
             <?php the_field('missao'); ?>

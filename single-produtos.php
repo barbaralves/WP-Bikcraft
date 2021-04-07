@@ -7,7 +7,7 @@ get_header();
 
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <section class="container produto-item fadeInDown">
+    <section class="container produto-item fadeInDown" data-anime="400">
         <div class="grid-11">
             <img src="<?php the_field('foto_produto1'); ?>" alt="Bikcraft <?php the_title(); ?>">
             <h2><?php the_title(); ?></h2>

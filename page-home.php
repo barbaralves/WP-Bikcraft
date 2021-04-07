@@ -27,17 +27,17 @@ get_header();
 
     <section class="introducao">
         <div class="container">
-            <h1><?php the_field('titulo_introducao'); ?></h1>
-            <blockquote class="quote-externo">
+            <h1 data-anime="400" class="fadeInDown"><?php the_field('titulo_introducao'); ?></h1>
+            <blockquote data-anime="800" class="fadeInDown quote-externo">
                 <p><?php the_field('quote_introducao'); ?></p>
                 <cite><?php the_field('citacao_introducao'); ?></cite>
             </blockquote>
-            <a href="/sites/bikcraft/produtos" class="btn">Orçamento</a>
+            <a data-anime="1200" href="/sites/bikcraft/produtos" class="btn">Orçamento</a>
         </div>
     </section>
     <!-- Fim introdução -->
 
-    <section class="produtos container">
+    <section class="produtos container fadeInDown" data-anime="1600">
         <h2 class="subtitulo">Produtos</h2>
         <ul class="produtos-lista">
 

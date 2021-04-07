@@ -7,7 +7,7 @@ get_header();
 
     <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
     
-    <section class="contato container fadeInDown"> 
+    <section class="contato container fadeInDown" data-anime="1200"> 
         <form id="form-orcamento" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="contato-form grid-8 formphp">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required>

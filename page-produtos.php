@@ -17,7 +17,7 @@ get_header();
     ?>
 
     <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-        <section class="container produto-item fadeInDown">
+        <section class="container produto-item fadeInDown" data-anime="1200">
         <a href="<?php the_permalink(); ?>">
             <div class="grid-11">
                 <img src="<?php the_field('foto_produto1'); ?>" alt="Bikcraft <?php the_title(); ?>">

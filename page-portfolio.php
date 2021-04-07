@@ -7,8 +7,7 @@ get_header();
 
     <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
-    <!-- <section class="container fadeInDown" data-slide="quote" data-anime="1200"> -->
-    <section class="container">
+    <section class="container fadeInDown" data-slide="quote" data-anime="1200">
         <?php if(have_rows('quote_portfolio')) : while(have_rows('quote_portfolio')) : the_row(); ?>
                 <blockquote class="quote-cliente">
                     <?php the_sub_field('quote'); ?>
