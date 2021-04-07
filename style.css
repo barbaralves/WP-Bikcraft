@@ -222,7 +222,6 @@ img {
     margin: 0 auto;
 }
 
-
 .produtos-lista li h3 {
     font-weight: bold;
     font-size: 18px;
@@ -243,6 +242,10 @@ img {
 
 .produtos-lista li p {
     padding: 10px 20px 20px 20px;
+}
+
+.produtos-lista a {
+    color: #000;
 }
 
 .produtos-icone {
